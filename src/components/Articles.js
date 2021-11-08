@@ -7,7 +7,7 @@ const Articles = ({ articles }) => {
             {articles.map((article, index) => (
                 <div key={index} className="p-4 md:w-1/2">
                     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                        <Link to={`/article/${article.name}`}>
+                        <Link to={`/blog/article/${article.name}`}>
                             <img
                                 className='lg:h-48 md:h-36 w-full object-cover object-center'
                                 src={article.thumbnail}
@@ -15,7 +15,7 @@ const Articles = ({ articles }) => {
                             />
                         </Link>
                         <div className='p-6'>
-                            <Link key={index} to={`/article/${article.name}`}>
+                            <Link key={index} to={`/blog/article/${article.name}`}>
                                 <h3 className='title-font text-lg font-medium text-grey-900 mb-3'>
                                     {article.title}
                                 </h3>
@@ -26,7 +26,7 @@ const Articles = ({ articles }) => {
                             <div className='flex item-center flex-wrap'>
                                 <Link
                                     className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0'
-                                    to={`/article/${article.name}`}
+                                    to={`/blog/article/${article.name}`}
                                 >
                                     Learn more...
                                 </Link>
