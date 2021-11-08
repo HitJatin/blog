@@ -15,10 +15,10 @@ function App() {
       <NavBar />
       <div className='max-w-screen-md mx-auto pt-20'>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/articles-list" element={<ArticlesList />} />
-        <Route path="/article/:name" element={<Article />} />
+        <Route path="/blog/" element={<Home />} />
+        <Route path="/blog/about" element={<About />} />
+        <Route path="/blog/articles-list" element={<ArticlesList />} />
+        <Route path="/blog/article/:name" element={<Article />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       </div>
